@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Keep your posture in best way with PosMate">
     <meta name="theme-color" content="#317EFB">
-    <title>PosMate | {% block title %} Have a buddy who guides you to the best {% endblock title %} </title>
+    <title>Posture Guard | {% block title %} Have a buddy who guides you to the best {% endblock title %} </title>
 
     <!-- Stylesheets -->
     <link rel="stylesheet" href="static/styles/home.css">
@@ -34,10 +34,12 @@
     </div>
     <div class="bod">
         <header>
-            <div id="logo">POSMATE</div>
+            <div id="logo">SMART POSTURE GUARD</div>
             <div><a href="https://blog.tensorflow.org/2018/05/real-time-human-pose-estimation-in.html"><button id="hw"
                         type="submit" class="btn btn-outline-dark btn-lg">How it Works?</button></a></div>
-            <div><a href="/"><button id="hm" type="submit" class="btn btn-outline-dark btn-lg">Home</button></a></div>
+            <div><a href="{{ url_for('menu') }}"><button id="hm" type="submit" class="btn btn-outline-dark btn-lg">Home</button></a></div>
+            <br>
+            <div><a href="{{ url_for('logout') }}"><button id="hm" type="submit" class="btn btn-outline-dark btn-lg">Logout</button></a></div>
             <br>
             <div class="ic"><img role="button" onclick="openNav()" src="/static/hamburger.png" alt="#"></div>
             <br>
@@ -56,6 +58,12 @@
         crossorigin="anonymous"></script>
     </div>
     <script src="/static/scripts/home.js"></script>
+    <script src="{{ url_for('static', filename='scripts/menu.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/profile.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/edit_profile.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/performance.js') }}"></script>
+    <script src="{{ url_for('static', filename='scripts/daily.js') }}"></script>
+
 
 </body>
 

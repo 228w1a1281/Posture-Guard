@@ -1,0 +1,52 @@
+{% extends 'base.html' %}
+
+{% block title %} Profile {% endblock title %}
+
+{% block head %}
+<!-- CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<link rel="stylesheet" href="static/styles/profile.css">
+{% endblock head %}
+<body>
+    {% block work_body %}
+    <!-- Menu Container -->
+    <div class="container mt-5">
+        <div class="row">
+            <!-- Sidebar for menu options -->
+            <div class="col-md-3" style="padding-left: 0;"> <!-- Remove default padding -->
+                <h2 class="text-start">Menu Options</h2> <!-- Align text to the start -->
+                <ul class="list-group">
+                    <!-- Each item now redirects to a separate HTML page -->
+                    <li class="list-group-item">
+                        <a href="{{ url_for('profile') }}" class="btn btn-outline btn-lg w-100">Profile</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{{ url_for('work') }}" class="btn btn-outline btn-lg w-100">Detection</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{{ url_for('performance') }}" class="btn btn-outline btn-lg w-100">Performance Analysis</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="{{ url_for('get_daily_summary') }}" class="btn btn-outline btn-lg w-100">Daily Summary</a>
+                    </li>
+                </ul>
+            </div>
+     
+            <!-- Content area for profile information -->
+            <div class="col-md-9">
+                <div class="profile-content">
+                    <h2>Your Profile</h2>
+                    <div class="profile-info">
+                        <p><strong>Name:</strong> {{ user.name }}</p>
+                        <p><strong>Email:</strong> {{ user.email }}</p>
+                    </div>
+                    <div class="profile-actions">
+                        <a href="{{ url_for('edit_profile') }}" class="edit-btn btn btn-primary">Edit Profile</a>
+                    </div>
+                </div>
+            </div>
+            <script src="static/js/profile.js"></script>
+            
+    {% endblock work_body %}
+</body>

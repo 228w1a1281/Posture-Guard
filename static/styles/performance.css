@@ -1,0 +1,84 @@
+/* Setting a background for the performance page */
+body {
+    background-color: #f0f0f0; /* Light background color */
+    background-image: url('path/to/your/background-image.jpg'); /* Adjust this path */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Menu Navigation */
+.menu-nav {
+    flex-basis: 40%;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Menu List */
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Menu Items */
+.menu-nav ul li {
+    display: block;
+}
+
+/* Menu Links */
+.menu-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Menu Hover Effects */
+.menu-nav ul li a:hover {
+    background-color: #00f2fe;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Content Section (Below Menu) */
+.content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+/* Chart Container */
+#chartContainer {
+    margin: 20px auto; /* Center the chart container */
+}
+
+/* Button Styling */
+.btn-primary {
+    margin-top: 20px; /* Space above the button */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-nav ul {
+        flex-direction: column;
+    }
+    .menu-nav ul li {
+        margin-bottom: 10px;
+    }
+}

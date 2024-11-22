@@ -1,0 +1,133 @@
+/* Body and Background */
+body {
+    background-color: #f0f0f0; /* Light background color */
+    background-image: url('/static/your-background-image.jpg'); /* Consistent background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Container */
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+/* Menu Navigation */
+.menu-nav {
+    flex-basis: 40%;
+    font-size: 1.2rem;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 1.5rem; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 2rem;
+}
+
+/* Menu List */
+.menu-nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* Menu Items */
+.menu-nav ul li {
+    display: inline-block;
+}
+
+/* Menu Links */
+.menu-nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px 20px; /* Same padding as menu.css */
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+/* Menu Hover Effects */
+.menu-nav ul li a:hover {
+    background-color: #00f2fe;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Profile Section */
+.profile-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 3rem; /* Consistent padding */
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    min-height: 400px;
+}
+
+/* Profile Title */
+.profile-content h2 {
+    color: #333;
+    font-size: 2rem; /* Prominent size for profile heading */
+    font-weight: bold;
+}
+
+/* Profile Info */
+.profile-info {
+    margin-top: 20px;
+}
+
+.profile-info p {
+    font-size: 1.2rem; /* Consistent with other styles */
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Highlighted Text */
+.profile-info strong {
+    color: #4facfe; /* Matching menu style */
+}
+
+/* Profile Actions */
+.profile-actions {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.profile-actions a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #4facfe;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+/* Profile Action Hover Effects */
+.profile-actions a:hover {
+    background-color: #00f2fe;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .profile-content {
+        padding: 1.5rem; /* Adjusted padding for smaller screens */
+    }
+
+    .profile-info p {
+        font-size: 1rem; /* Smaller font size for mobile */
+    }
+
+    .menu-nav ul {
+        flex-direction: column;
+    }
+
+    .menu-nav ul li {
+        margin-bottom: 10px;
+    }
+}
