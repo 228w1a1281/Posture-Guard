@@ -11,3 +11,4 @@ Git filter=lfs diff=lfs merge=lfs -text
 Example filter=lfs diff=lfs merge=lfs -text
 to filter=lfs diff=lfs merge=lfs -text
 *.large-file-extension filter=lfs diff=lfs merge=lfs -text
+annotations/person_keypoints_train2017.json filter=lfs diff=lfs merge=lfs -text
